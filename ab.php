@@ -55,13 +55,13 @@
 
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        // نام فایل
+
         $fileName = 'command.txt';
 
-        // دریافت متن از کادر
+
         $text = $_POST['text'];
 
-        // نوشتن متن در فایل
+    
         if (file_put_contents($fileName, $text)) {
             echo "<p style='color: #00ff00;'>369 >  $fileName</p>";
         } else {
